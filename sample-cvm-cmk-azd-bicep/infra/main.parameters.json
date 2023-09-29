@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "parLocation": {
+        "value": "${AZURE_LOCATION}"
+      },
+      "parSecretPassword":{
+        "value": "${AZURE_SECRET_PASSWORD}"
+      },
+      "parVmName":{
+        "value": "cvmtest12"
+      },
+      "parVmSize":{
+        "value": "Standard_DC2as_v5"
+      },	
+      "parVNetName":{
+        "value": "adVNET"
+      },
+      "parSubnetName":{
+        "value": "adSubnet"
+      },
+      "parResourceGroupNameVnet":{   
+        "value": "modernwork-network-rg"
+      },
+      "parDomainPassword":{
+        "value": "${DOMAIN_JOIN_Password}"
+      },
+      "parDomainToJoin":{
+        "value": "${DOMAIN_TO_JOIN}"
+      },
+      "parDomainUsername": {
+        "value": "${DOMAIN_JOIN_USER}"
+      },
+      "parOsImageName": {
+        "value": "Windows Server 2022 Gen 2"
+      },	
+      "parOsDiskType": {
+        "value": "StandardSSD_LRS"
+      },
+      "parAdminUsername": {
+        "value": "azureuser"
+      },
+      "parObjectConfidentialVMOrchestrator": {
+        "value": "${OBJECTID_CONFIDENTIAL_VM_ORCHESTRATOR}}"
+      },
+      "parLaWorkSpaceResourceId": {
+        "value": "${LA_WORKSPACE_ID}"
+      }
+      	  
+      
+
+      
+      
+
+
+    }
+}

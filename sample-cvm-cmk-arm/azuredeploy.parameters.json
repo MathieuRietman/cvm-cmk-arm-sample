@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+  
+      "vmSize": {
+        "value": "Standard_DC2as_v5"
+      },
+      "osImageName": {
+        "value": "Windows Server 2022 Gen 2"
+      },
+      "osDiskType": {
+        "value": "StandardSSD_LRS"
+      },
+      "securityType": {
+        "value": "DiskWithVMGuestState"
+      },
+      "adminUsername": {
+        "value": "vmaccadmin"
+      }
+      
+
+    }
+  }
